@@ -1,6 +1,22 @@
 @import "partials/params";
 @import "partials/mixins";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.test{
-  background-color: darken(#fff, 20%);
+html, body {
+  @include clear;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include clear;
+}
+
+a {
+  text-decoration: none;
+}
+
+.view-port {
+  margin: 0 auto;
+  width: $view-port;
 }

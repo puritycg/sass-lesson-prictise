@@ -27,8 +27,8 @@ gulp.task('scss', function () {
         .pipe(sass({outputStyle: 'expanded'})).on('error', sass.logError)
         .pipe(concat(config.output.cssName))
         .pipe(autoprefixer())
+        .pipe(gulpIf(!config.isDevelop, cleanCSS()))
         .pipe(gulpIf(config.isDevelop, sourcemaps.write()))
-        .pipe(gulpIf(config.isDevelop, cleanCSS()))
         .pipe(gulp.dest(config.output.path))
         .pipe(browserSync.stream());
 });
