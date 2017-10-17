@@ -1,0 +1,6 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.test{
+  background-color: darken(#fff, 20%);
+}
