@@ -1,5 +1,4 @@
-@import "partials/mixins";
-@import "partials/params";
+@import "partials/importer";
 
 .header {
   @include flex-center;

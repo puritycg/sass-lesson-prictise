@@ -1,11 +1,10 @@
-@import "partials/params";
-@import "partials/mixins";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import "partials/importer";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
 html, body {
   @include clear;
   width: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {

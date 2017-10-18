@@ -1,12 +1,9 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "partials/importer";
 
 $font-color: #fff;
 
 .nav{
   position: relative;
-  left: 0;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
